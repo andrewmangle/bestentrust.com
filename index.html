@@ -1,235 +1,1077 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.7">
-  <style type="text/css">
-    body {background-color: #0b131c}
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #0000e9; -webkit-text-stroke: #0000e9; background-color: #b6862d; min-height: 15.0px}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.8px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2; min-height: 15.0px}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p6 {margin: 0.0px 0.0px 30.0px 0.0px; font: 20.0px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p7 {margin: 0.0px 0.0px 36.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.75); -webkit-text-stroke: rgba(242, 236, 226, 0.75)}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 33.6px 'Helvetica Neue'; color: #e1ab3b; -webkit-text-stroke: #e1ab3b}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.6px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #6d6d6d; -webkit-text-stroke: #6d6d6d; min-height: 15.0px}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p13 {margin: 0.0px 0.0px 15.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.78); -webkit-text-stroke: rgba(242, 236, 226, 0.78)}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px '.Apple Color Emoji UI'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.6px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.2px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #e1ab3b; -webkit-text-stroke: #e1ab3b}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 36.0px 'Helvetica Neue'; color: #b6862d; color: rgba(182, 134, 45, 0.15); -webkit-text-stroke: rgba(182, 134, 45, 0.15)}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.2px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.2px 'Helvetica Neue'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p26 {margin: 0.0px 42.0px 36.0px 42.0px; text-align: center; text-indent: -42.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.72); -webkit-text-stroke: rgba(242, 236, 226, 0.72)}
-    p.p27 {margin: 0.0px 0.0px 0.0px 0.0px; font: 21.0px '.Apple Color Emoji UI'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p28 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.2px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6}
-    p.p29 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.8px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p30 {margin: 0.0px 0.0px 0.0px 0.0px; font: 8.4px 'Helvetica Neue'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p31 {margin: 0.0px 0.0px 0.0px 0.0px; font: 14.4px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6}
-    p.p32 {margin: 0.0px 0.0px 0.0px 0.0px; font: 9.0px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p33 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.2px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.65); -webkit-text-stroke: rgba(242, 236, 226, 0.65)}
-    p.p34 {margin: 0.0px 0.0px 24.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #f2ece2; color: rgba(242, 236, 226, 0.72); -webkit-text-stroke: rgba(242, 236, 226, 0.72)}
-    p.p35 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px Menlo; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p36 {margin: 0.0px 0.0px 0.0px 0.0px; font: 7.8px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    p.p37 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.4px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p38 {margin: 0.0px 0.0px 0.0px 0.0px; font: 10.8px '.Apple Color Emoji UI'; color: #b6862d; -webkit-text-stroke: #b6862d}
-    p.p39 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6}
-    p.p40 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.2px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p41 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 10.2px 'Helvetica Neue'; color: #60c885; -webkit-text-stroke: #60c885}
-    p.p42 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #f2ece2; -webkit-text-stroke: #f2ece2}
-    p.p43 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 8.6px 'Helvetica Neue'; color: #798ea5; -webkit-text-stroke: #798ea5}
-    span.s1 {font-kerning: none}
-    span.s2 {font-kerning: none; background-color: rgba(11, 19, 28, 0.92)}
-    span.s3 {font-kerning: none; color: #e1ab3b; -webkit-text-stroke: 0px #e1ab3b}
-    span.s4 {font-kerning: none; background-color: #101927}
-    span.s5 {font-kerning: none; color: #e1ab3b; background-color: #101927; -webkit-text-stroke: 0px #e1ab3b}
-    span.s6 {font-kerning: none; color: #f2ece2; background-color: #101927; -webkit-text-stroke: 0px #f2ece2}
-    span.s7 {font-kerning: none; background-color: rgba(182, 134, 45, 0.039)}
-    span.s8 {font-kerning: none; background-color: #0b131c}
-    span.s9 {font-kerning: none; color: #f9f9f6; background-color: #0b131c; -webkit-text-stroke: 0px #f9f9f6}
-    span.s10 {font-kerning: none; color: #f9f9f6; -webkit-text-stroke: 0px #f9f9f6}
-    span.s11 {font-kerning: none; background-color: rgba(11, 19, 28, 0.5)}
-    span.s12 {font-kerning: none; color: #f9f9f6; background-color: #101927; -webkit-text-stroke: 0px #f9f9f6}
-    span.s13 {font-kerning: none; background-color: rgba(11, 19, 28, 0.6)}
-    span.s14 {font-kerning: none; color: #e1ab3b; background-color: #0b131c; -webkit-text-stroke: 0px #e1ab3b}
-  </style>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Best Entrust, LLC — Technology Consulting &amp; Workforce Training</title>
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="index_files/css2.css" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy:    #0B1826;
+    --navy2:   #132234;
+    --navy3:   #1A3047;
+    --gold:    #C4973A;
+    --gold2:   #E8B84B;
+    --cream:   #F5F0E8;
+    --white:   #FAFAF8;
+    --muted:   #8BA0B4;
+    --border:  rgba(196,151,58,0.25);
+    --serif:   'Cormorant Garamond', Georgia, serif;
+    --sans:    'Jost', sans-serif;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--navy);
+    color: var(--cream);
+    font-family: var(--sans);
+    font-weight: 300;
+    line-height: 1.65;
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 1.2rem 3rem;
+    background: rgba(11,24,38,0.92);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+  .nav-logo {
+    display: flex; align-items: center; gap: 0.75rem;
+    text-decoration: none;
+  }
+  .nav-logo-icon {
+    width: 36px; height: 36px;
+    background: var(--gold);
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E") center/contain no-repeat;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z'/%3E%3C/svg%3E") center/contain no-repeat;
+    flex-shrink: 0;
+  }
+  .nav-brand {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--cream);
+    letter-spacing: 0.02em;
+  }
+  .nav-links {
+    display: flex; gap: 2.5rem; list-style: none;
+  }
+  .nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column; justify-content: center;
+    padding: 8rem 3rem 5rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-bg {
+    position: absolute; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 40%, rgba(196,151,58,0.07) 0%, transparent 60%),
+      radial-gradient(ellipse 50% 50% at 20% 80%, rgba(26,48,71,0.8) 0%, transparent 60%),
+      linear-gradient(160deg, #0B1826 0%, #132234 60%, #0e2235 100%);
+  }
+  .hero-grid {
+    position: absolute; inset: 0; z-index: 0;
+    background-image:
+      linear-gradient(rgba(196,151,58,0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(196,151,58,0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 80%);
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 850px; }
+  .hero-eyebrow {
+    display: inline-flex; align-items: center; gap: 0.75rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.5rem;
+  }
+  .hero-eyebrow::before {
+    content: '';
+    display: block; width: 32px; height: 1px;
+    background: var(--gold);
+  }
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(3rem, 6.5vw, 5.5rem);
+    font-weight: 600;
+    line-height: 1.06;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--gold2);
+  }
+  .hero-sub {
+    font-family: var(--serif);
+    font-size: clamp(1.3rem, 2.5vw, 1.9rem);
+    font-weight: 400;
+    color: var(--muted);
+    font-style: italic;
+    margin-bottom: 2.5rem;
+    line-height: 1.3;
+  }
+  .hero-desc {
+    max-width: 560px;
+    font-size: 1rem;
+    color: rgba(245,240,232,0.75);
+    line-height: 1.8;
+    margin-bottom: 3rem;
+  }
+  .hero-stats {
+    display: flex; gap: 3rem; flex-wrap: wrap;
+  }
+  .stat { }
+  .stat-num {
+    font-family: var(--serif);
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--gold2);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 0.3rem;
+  }
+  .hero-badge {
+    position: absolute; right: 3rem; top: 50%;
+    transform: translateY(-50%);
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0.5rem;
+    background: rgba(196,151,58,0.04);
+    backdrop-filter: blur(4px);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(-50%) translateY(0); }
+    50% { transform: translateY(-50%) translateY(-12px); }
+  }
+  .hero-badge-icon {
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+  .hero-badge-text {
+    font-family: var(--serif);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--gold);
+    text-align: center;
+    line-height: 1.3;
+  }
+  .hero-badge-since {
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  /* ── SECTIONS ── */
+  section {
+    position: relative; z-index: 1;
+    padding: 6rem 3rem;
+  }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-label::after {
+    content: '';
+    display: block; flex: 1; height: 1px;
+    background: var(--border);
+    max-width: 60px;
+  }
+  .section-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.15;
+    color: var(--white);
+    margin-bottom: 1rem;
+  }
+  .section-title em { font-style: italic; color: var(--gold2); }
+
+  /* ── DIVIDER ── */
+  .divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* ── ABOUT ── */
+  .about { background: var(--navy2); }
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    align-items: start;
+    margin-top: 3rem;
+  }
+  .about-text p {
+    color: rgba(245,240,232,0.78);
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+    line-height: 1.85;
+  }
+  .about-text p strong { color: var(--cream); font-weight: 500; }
+  .about-creds {
+    display: flex; flex-direction: column; gap: 1rem;
+  }
+  .cred-item {
+    display: flex; align-items: flex-start; gap: 1rem;
+    padding: 1.2rem 1.5rem;
+    background: rgba(196,151,58,0.04);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .cred-item:hover {
+    border-color: rgba(196,151,58,0.5);
+    background: rgba(196,151,58,0.08);
+  }
+  .cred-icon { font-size: 1.5rem; flex-shrink: 0; margin-top: 0.1rem; }
+  .cred-name { font-weight: 600; font-size: 0.9rem; color: var(--cream); margin-bottom: 0.15rem; }
+  .cred-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
+
+  /* ── CAPABILITIES ── */
+  .capabilities { background: var(--navy); }
+  .caps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    margin-top: 3.5rem;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  .cap-card {
+    background: var(--navy);
+    padding: 2.5rem 2rem;
+    transition: background 0.25s;
+    position: relative;
+    overflow: hidden;
+  }
+  .cap-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold2));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+  }
+  .cap-card:hover { background: var(--navy2); }
+  .cap-card:hover::before { transform: scaleX(1); }
+  .cap-num {
+    font-family: var(--serif);
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(196,151,58,0.15);
+    line-height: 1;
+    margin-bottom: 1rem;
+    transition: color 0.25s;
+  }
+  .cap-card:hover .cap-num { color: rgba(196,151,58,0.3); }
+  .cap-title {
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.75rem;
+    line-height: 1.2;
+  }
+  .cap-desc {
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.75;
+  }
+  .cap-tags {
+    display: flex; flex-wrap: wrap; gap: 0.4rem;
+    margin-top: 1.25rem;
+  }
+  .tag {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.65rem;
+    border: 1px solid rgba(196,151,58,0.3);
+    color: var(--gold);
+    border-radius: 2px;
+  }
+
+  /* ── TRACK RECORD ── */
+  .track { background: var(--navy2); }
+  .track-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3.5rem;
+  }
+  .track-item {
+    padding: 2rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: rgba(11,24,38,0.6);
+    position: relative;
+    overflow: hidden;
+  }
+  .track-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .track-item:hover::after { opacity: 1; }
+  .track-org {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .track-role {
+    font-family: var(--serif);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+  }
+  .track-years {
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+  .track-detail {
+    font-size: 0.85rem;
+    color: rgba(245,240,232,0.65);
+    line-height: 1.7;
+  }
+
+  /* ── CERTS ── */
+  .certs { background: var(--navy); padding: 4rem 3rem; }
+  .certs-inner {
+    max-width: 1100px; margin: 0 auto;
+    display: flex; align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .certs-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    flex-shrink: 0;
+    padding-right: 1.5rem;
+    border-right: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  .cert-badge {
+    display: flex; align-items: center; gap: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    background: rgba(196,151,58,0.04);
+    transition: border-color 0.2s, background 0.2s;
+  }
+  .cert-badge:hover {
+    border-color: var(--gold);
+    background: rgba(196,151,58,0.1);
+  }
+  .cert-abbr {
+    font-weight: 700;
+    font-size: 0.85rem;
+    color: var(--gold2);
+    letter-spacing: 0.05em;
+  }
+  .cert-full {
+    font-size: 0.72rem;
+    color: var(--muted);
+    border-left: 1px solid var(--border);
+    padding-left: 0.6rem;
+  }
+
+  /* ── GRANT FOCUS ── */
+  .grant-focus {
+    background: linear-gradient(135deg, var(--navy3) 0%, var(--navy2) 100%);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+  .grant-inner { max-width: 900px; margin: 0 auto; text-align: center; }
+  .grant-inner .section-label { justify-content: center; }
+  .grant-inner .section-label::after { display: none; }
+  .grant-inner .section-label::before {
+    content: '';
+    display: block; flex: 1; height: 1px;
+    background: var(--border);
+    max-width: 60px;
+  }
+  .grant-title {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+    line-height: 1.2;
+  }
+  .grant-title em { font-style: italic; color: var(--gold2); }
+  .grant-desc {
+    font-size: 1rem;
+    color: rgba(245,240,232,0.72);
+    line-height: 1.85;
+    margin-bottom: 3rem;
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .pillars {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    text-align: left;
+  }
+  .pillar {
+    padding: 1.75rem 1.5rem;
+    background: rgba(11,24,38,0.5);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+  }
+  .pillar-icon { font-size: 1.75rem; margin-bottom: 0.75rem; }
+  .pillar-title {
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .pillar-text {
+    font-size: 0.82rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  /* ── CONTACT ── */
+  .contact { background: var(--navy); }
+  .contact-grid {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 5rem; align-items: center;
+    margin-top: 3rem;
+  }
+  .contact-info { }
+  .contact-info p {
+    color: rgba(245,240,232,0.72);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  .contact-detail {
+    display: flex; align-items: flex-start;
+    gap: 1rem; margin-bottom: 1.25rem;
+  }
+  .contact-detail-icon {
+    width: 38px; height: 38px; flex-shrink: 0;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem;
+    color: var(--gold);
+  }
+  .contact-detail-label {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 0.2rem;
+  }
+  .contact-detail-val {
+    font-size: 0.95rem;
+    color: var(--cream);
+  }
+  .contact-box {
+    background: var(--navy2);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 3rem;
+  }
+  .contact-box-title {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+  .contact-box-sub {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 1.75rem;
+  }
+  .info-row {
+    display: flex; justify-content: space-between;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid rgba(196,151,58,0.1);
+    font-size: 0.85rem;
+  }
+  .info-row:last-child { border-bottom: none; }
+  .info-key { color: var(--muted); font-size: 0.75rem; letter-spacing: 0.08em; }
+  .info-val { color: var(--cream); font-weight: 500; text-align: right; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    border-top: 1px solid var(--border);
+    padding: 2rem 3rem;
+    display: flex; justify-content: space-between; align-items: center;
+    position: relative; z-index: 1;
+  }
+  .footer-brand {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--cream);
+  }
+  .footer-note {
+    font-size: 0.72rem;
+    color: var(--muted);
+    text-align: right;
+    line-height: 1.6;
+  }
+
+  /* ── SCROLL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+  .reveal-delay-5 { transition-delay: 0.5s; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 900px) {
+    nav { padding: 1rem 1.5rem; }
+    .nav-links { display: none; }
+    .hero { padding: 6rem 1.5rem 4rem; }
+    .hero-badge { display: none; }
+    section { padding: 4rem 1.5rem; }
+    .about-grid, .track-grid, .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .caps-grid { grid-template-columns: 1fr; }
+    .pillars { grid-template-columns: 1fr; }
+    .certs-inner { gap: 1rem; }
+    .certs-label { border-right: none; padding-right: 0; }
+    footer { flex-direction: column; gap: 0.75rem; text-align: center; }
+    .footer-note { text-align: center; }
+  }
+</style>
 </head>
-<body>
-<p class="p1"><span class="s1"></span><br></p>
-<p class="p2"><span class="s2">Best Entrust, LLC</span></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p3"><span class="s1"></span><br></p>
-<p class="p4"><span class="s1">SERVING MARYLAND BUSINESSES SINCE 2006</span></p>
-<h1 style="margin: 0.0px 0.0px 6.0px 0.0px; font: 52.0px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6"><span class="s1">Technology<br>
-Consulting &amp;<br>
-</span><span class="s3">Workforce Training</span></h1>
-<p class="p6"><span class="s1">AI Strategy. Cybersecurity. Digital Workforce Development.</span></p>
-<p class="p7"><span class="s1">Best Entrust, LLC partners with Maryland organizations to navigate technology transformation and build the skilled, AI-ready workforce that employers actually need. Trusted by federal agencies, higher education, and regional businesses for nearly two decades.</span></p>
-<p class="p8"><span class="s1">18+</span></p>
-<p class="p9"><span class="s1">YEARS IN MARYLAND</span></p>
-<p class="p8"><span class="s1">4</span></p>
-<p class="p9"><span class="s1">ACTIVE CERTIFICATIONS</span></p>
-<p class="p8"><span class="s1">$180K+</span></p>
-<p class="p9"><span class="s1">GRANTS MANAGED</span></p>
-<p class="p8"><span class="s1">PG Co.</span></p>
-<p class="p9"><span class="s1">DEEPLY ROOTED</span></p>
-<p class="p10"><span class="s1"></span><br></p>
-<p class="p11"><span class="s4">WHO WE ARE</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6"><span class="s4">A Practitioner-Led</span><span class="s1"><br>
-</span><span class="s5">Technology Firm</span></h2>
-<p class="p13"><span class="s4">Best Entrust, LLC is a Maryland-based technology consulting and workforce training firm founded in 2006. We are led by </span><span class="s6">Andrew H. Mangle, Ph.D.</span><span class="s4">, a practitioner-educator who brings deep expertise across cybersecurity, artificial intelligence, data analytics, and digital transformation.</span></p>
-<p class="p13"><span class="s4">Our approach is grounded in real-world application. Every training program we design is co-developed with employer partners, benchmarked against labor market data, and delivered using tools that participants will use on day one of employment.</span></p>
-<p class="p13"><span class="s4">We have served federal agencies, higher education institutions, nonprofits, and regional small businesses. Our engagements range from strategic technology advisory to hands-on workforce training cohorts, all anchored in </span><span class="s6">measurable outcomes</span><span class="s4">.</span></p>
-<p class="p13"><span class="s4">Prince George's County is our home. We are invested in building the technology talent pipeline that keeps Maryland competitive in the AI era.</span></p>
-<p class="p14"><span class="s7">🎓</span></p>
-<p class="p15"><span class="s7">Ph.D., Business Administration — Morgan State University</span></p>
-<p class="p16"><span class="s7">Cybersecurity focus. AACSB-accredited institution. Dissertation on adaptive security authentication systems.</span></p>
-<p class="p14"><span class="s7">🏛</span></p>
-<p class="p15"><span class="s7">Associate Professor (Tenured), MIS — Bowie State University</span></p>
-<p class="p16"><span class="s7">8 years. NSA/DHS Center of Academic Excellence. Curriculum Committee Chair. Graduate Program Coordinator.</span></p>
-<p class="p14"><span class="s7">🇺🇸</span></p>
-<p class="p15"><span class="s7">Data Analytics Research Fellow — U.S. Dept. of Homeland Security</span></p>
-<p class="p16"><span class="s7">2022–2024. Led LLM, blockchain, and data autonomy architecture initiatives for federal operations.</span></p>
-<p class="p14"><span class="s7">📜</span></p>
-<p class="p15"><span class="s7">Maryland Dept. ID: W11375136 — In Good Standing</span></p>
-<p class="p16"><span class="s7">Registered June 28, 2006. Fully compliant with Maryland SDAT requirements. Certificate of Status available upon request.</span></p>
-<p class="p17"><span class="s8">ACTIVE</span></p>
-<p class="p17"><span class="s8">CREDENTIALS</span></p>
-<p class="p18"><span class="s7">CISSP</span></p>
-<p class="p9"><span class="s7">Certified Information Systems Security Professional</span></p>
-<p class="p18"><span class="s7">CISA</span></p>
-<p class="p9"><span class="s7">Certified Information Systems Auditor</span></p>
-<p class="p18"><span class="s7">CSSLP</span></p>
-<p class="p9"><span class="s7">Certified Secure Software Lifecycle Professional</span></p>
-<p class="p18"><span class="s7">PMP</span></p>
-<p class="p9"><span class="s7">Project Management Professional</span></p>
-<p class="p11"><span class="s8">WHAT WE DELIVER</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e1ab3b; -webkit-text-stroke: #e1ab3b"><span class="s9">Core </span><span class="s8">Capabilities</span></h2>
-<p class="p20"><span class="s8">01</span></p>
-<p class="p21"><span class="s8">AI Tools &amp; Automation Training</span></p>
-<p class="p22"><span class="s8">Hands-on training in applied AI, large language models, workflow automation, and machine learning tools. Curriculum designed around tools employers are actively deploying, not theoretical frameworks.</span></p>
-<p class="p23"><span class="s8">LLMS</span></p>
-<p class="p23"><span class="s8">PROMPT ENGINEERING</span></p>
-<p class="p23"><span class="s8">AUTOMATION</span></p>
-<p class="p23"><span class="s8">AI GOVERNANCE</span></p>
-<p class="p20"><span class="s8">02</span></p>
-<p class="p21"><span class="s8">Data Analytics &amp; Digital Operations</span></p>
-<p class="p22"><span class="s8">From data literacy to full-stack analytics workflows. Training covers data pipelines, visualization, business intelligence tools, and operational reporting aligned to real employer workflows.</span></p>
-<p class="p23"><span class="s8">DATA ANALYTICS</span></p>
-<p class="p23"><span class="s8">BI TOOLS</span></p>
-<p class="p23"><span class="s8">DIGITAL OPS</span></p>
-<p class="p23"><span class="s8">SQL / PYTHON</span></p>
-<p class="p20"><span class="s8">03</span></p>
-<p class="p21"><span class="s8">Cybersecurity &amp; Risk Management</span></p>
-<p class="p22"><span class="s8">Security-first technology advisory and training. Deep expertise in NIST 800-53, ISO/IEC 27001, risk assessment, and information assurance drawn from federal, academic, and enterprise engagements.</span></p>
-<p class="p23"><span class="s8">NIST</span></p>
-<p class="p23"><span class="s8">RISK MGMT</span></p>
-<p class="p23"><span class="s8">COMPLIANCE</span></p>
-<p class="p23"><span class="s8">INFOSEC</span></p>
-<p class="p20"><span class="s8">04</span></p>
-<p class="p21"><span class="s8">Curriculum Design &amp; Delivery</span></p>
-<p class="p22"><span class="s8">Employer-co-designed curricula built around competency-based outcomes. Experience in online, hybrid, and face-to-face delivery with Quality Matters certification and over 30 courses developed and delivered.</span></p>
-<p class="p23"><span class="s8">CBE</span></p>
-<p class="p23"><span class="s8">QUALITY MATTERS</span></p>
-<p class="p23"><span class="s8">LMS</span></p>
-<p class="p23"><span class="s8">ASSESSMENT</span></p>
-<p class="p20"><span class="s8">05</span></p>
-<p class="p21"><span class="s8">Entrepreneurship &amp; Business Formation</span></p>
-<p class="p22"><span class="s8">Specialized programming for aspiring entrepreneurs and small business owners integrating digital literacy, fintech fundamentals, and AI-powered business tools to accelerate economic development.</span></p>
-<p class="p23"><span class="s8">ENTREPRENEURSHIP</span></p>
-<p class="p23"><span class="s8">FINTECH</span></p>
-<p class="p23"><span class="s8">SMALL BUSINESS</span></p>
-<p class="p23"><span class="s8">ECONOMIC DEV</span></p>
-<p class="p20"><span class="s8">06</span></p>
-<p class="p21"><span class="s8">Technology Strategy &amp; Advisory</span></p>
-<p class="p22"><span class="s8">Fractional CIO/CTO services for organizations navigating AI adoption, digital transformation, vendor selection, and technology governance. 18+ years advising government, education, and enterprise clients.</span></p>
-<p class="p23"><span class="s8">AI STRATEGY</span></p>
-<p class="p23"><span class="s8">DIGITAL TRANSFORMATION</span></p>
-<p class="p23"><span class="s8">FRACTIONAL CIO</span></p>
-<p class="p24"><span class="s1">WORKFORCE DEVELOPMENT</span></p>
-<h2 style="margin: 0.0px 0.0px 15.0px 0.0px; text-align: center; font: 32.0px 'Helvetica Neue'; color: #e1ab3b; -webkit-text-stroke: #e1ab3b"><span class="s10">Built to Deliver<br>
-</span><span class="s1">Job-Ready Outcomes</span></h2>
-<p class="p26"><span class="s1">Best Entrust designs training programs with a single goal: participants who are ready to contribute from day one. Every program integrates employer co-design, real-tool proficiency, and structured pathways to placement.</span></p>
-<p class="p27"><span class="s11">🤝</span></p>
-<p class="p28"><span class="s11">Employer-Led Design</span></p>
-<p class="p29"><span class="s11">Curricula developed with and validated by employer partners. Skills maps built from actual job descriptions and employer interviews, not textbooks.</span></p>
-<p class="p27"><span class="s11">📊</span></p>
-<p class="p28"><span class="s11">Data-Driven Evidence</span></p>
-<p class="p29"><span class="s11">Training plans grounded in Maryland labor market data, BLS projections, and regional skills gap analysis. We quantify the need before we propose the solution.</span></p>
-<p class="p27"><span class="s11">🎯</span></p>
-<p class="p28"><span class="s11">Placement-Focused</span></p>
-<p class="p29"><span class="s11">Every cohort includes structured job placement support, employer connection events, and retention follow-through. Training is not complete until participants are employed.</span></p>
-<p class="p11"><span class="s4">PROVEN EXPERIENCE</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #e1ab3b; -webkit-text-stroke: #e1ab3b"><span class="s12">Selected</span><span class="s10"><br>
-</span><span class="s4">Engagements</span></h2>
-<p class="p30"><span class="s13">U.S. DEPARTMENT OF HOMELAND SECURITY</span></p>
-<p class="p31"><span class="s13">Data Analytics Research Fellow</span></p>
-<p class="p32"><span class="s13">2022 – 2024</span></p>
-<p class="p33"><span class="s13">Directed AI and data architecture initiatives involving large language models, blockchain, and data autonomy frameworks for mission-critical federal applications. Contributed to a DHS patent on Web 3.0 and blockchain data architecture.</span></p>
-<p class="p30"><span class="s13">BOWIE STATE UNIVERSITY — PRINCE GEORGE'S COUNTY</span></p>
-<p class="p31"><span class="s13">Tenured Associate Professor, MIS</span></p>
-<p class="p32"><span class="s13">2017 – Present</span></p>
-<p class="p33"><span class="s13">Leads AI, cybersecurity, and emerging technology curriculum at an NSA/DHS-designated Center of Academic Excellence. 8 years of curriculum design, graduate advising, and applied technology instruction serving a majority-minority institution in PG County.</span></p>
-<p class="p30"><span class="s13">INTERLEDGER FOUNDATION</span></p>
-<p class="p31"><span class="s13">Principal Investigator — AI &amp; FinTech Training Program</span></p>
-<p class="p32"><span class="s13">2022 – Present</span></p>
-<p class="p33"><span class="s13">Managed $180,000 across two grant awards. Designed and delivered AI-integrated digital finance curriculum, connecting students to global fintech networks. Demonstrates proven grant management and accountability at scale.</span></p>
-<p class="p30"><span class="s13">THERAPEUTIC ALTERNATIVES OF MARYLAND</span></p>
-<p class="p31"><span class="s13">Board of Directors / Chief Technology Officer</span></p>
-<p class="p32"><span class="s13">2016 – 2020</span></p>
-<p class="p33"><span class="s13">Board-level technology strategy, vendor management, and digital engagement for a Maryland healthcare nonprofit. Directly analogous to the fractional, outcome-driven engagement model used in workforce training partnerships.</span></p>
-<p class="p30"><span class="s13">NORTHRUP GRUMMAN — FACULTY RESEARCH COLLABORATION</span></p>
-<p class="p31"><span class="s13">Co-Principal Investigator</span></p>
-<p class="p32"><span class="s13">2023 – Present</span></p>
-<p class="p33"><span class="s13">$40,000 industry-funded engagement producing deliverables aligned with employer needs in emerging technologies and market research. Demonstrates ability to translate industry requirements into structured academic and training outcomes.</span></p>
-<p class="p30"><span class="s13">U.S. ARMY CERDEC (ORISE)</span></p>
-<p class="p31"><span class="s13">Faculty Research — Strategic Cyber Management</span></p>
-<p class="p32"><span class="s13">Summer 2015</span></p>
-<p class="p33"><span class="s13">Evaluated Department of Defense cybersecurity posture, recommended tactical cyber strategies, and assessed capability gaps. Established track record of security advisory at the federal level.</span></p>
-<p class="p11"><span class="s8">GET IN TOUCH</span></p>
-<h2 style="margin: 0.0px 0.0px 12.0px 0.0px; font: 32.0px 'Helvetica Neue'; color: #f9f9f6; -webkit-text-stroke: #f9f9f6"><span class="s8">Ready to </span><span class="s14">Partner</span></h2>
-<p class="p34"><span class="s8">Best Entrust brings nearly two decades of Maryland-based technology consulting and workforce development experience to every engagement. We are actively partnering with regional organizations, employers, and economic development entities to build the AI-ready talent pipeline Prince George's County needs.</span></p>
-<p class="p35"><span class="s8">✉</span></p>
-<p class="p36"><span class="s8">EMAIL</span></p>
-<p class="p37"><span class="s8">andy@bestentrust.com</span></p>
-<p class="p38"><span class="s8">📞</span></p>
-<p class="p36"><span class="s8">PHONE</span></p>
-<p class="p37"><span class="s8">410.343.9483</span></p>
-<p class="p38"><span class="s8">📍</span></p>
-<p class="p36"><span class="s8">LOCATION</span></p>
-<p class="p37"><span class="s8">Baltimore, Maryland</span></p>
-<p class="p38"><span class="s8">🔗</span></p>
-<p class="p36"><span class="s8">LINKEDIN</span></p>
-<p class="p37"><span class="s8">linkedin.com/in/andrew-mangle</span></p>
-<p class="p39"><span class="s4">Firm Information</span></p>
-<p class="p29"><span class="s4">For verification and grant documentation purposes</span></p>
-<p class="p32"><span class="s4">Legal Name</span></p>
-<p class="p40"><span class="s4">Best Entrust, LLC</span></p>
-<p class="p32"><span class="s4">State of Formation</span></p>
-<p class="p40"><span class="s4">Maryland</span></p>
-<p class="p32"><span class="s4">MD Dept. ID</span></p>
-<p class="p40"><span class="s4">W11375136</span></p>
-<p class="p32"><span class="s4">Date Established</span></p>
-<p class="p40"><span class="s4">June 28, 2006</span></p>
-<p class="p32"><span class="s4">Standing</span></p>
-<p class="p41"><span class="s4">In Good Standing ✓</span></p>
-<p class="p32"><span class="s4">Entity Type</span></p>
-<p class="p40"><span class="s4">Limited Liability Company</span></p>
-<p class="p32"><span class="s4">Principal</span></p>
-<p class="p40"><span class="s4">Andrew H. Mangle, Ph.D.</span></p>
-<p class="p32"><span class="s4">Credentials</span></p>
-<p class="p40"><span class="s4">CISSP · CISA · CSSLP · PMP</span></p>
-<p class="p42"><span class="s8">Best Entrust, LLC</span></p>
-<p class="p43"><span class="s8">Maryland Technology Consulting &amp; Workforce Training · Est. 2006</span></p>
-<p class="p43"><span class="s8">MD Dept. ID: W11375136 · Baltimore, Maryland</span></p>
-</body>
-</html>
+<body data-new-gr-c-s-check-loaded="8.936.0" data-gr-ext-installed="">
+
+<!-- ── NAV ── -->
+<nav>
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon"></div>
+    <span class="nav-brand">Best Entrust, LLC</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#capabilities">Capabilities</a></li>
+    <li><a href="#track-record">Track Record</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Serving Maryland Businesses Since 2006</div>
+    <h1 class="hero-title">
+      Technology<br>
+      Consulting &amp;<br>
+      <em>Workforce Training</em>
+    </h1>
+    <p class="hero-sub">AI Strategy. Cybersecurity. Digital Workforce Development.</p>
+    <p class="hero-desc">
+      Best Entrust, LLC partners with Maryland organizations to navigate
+      technology transformation and build the skilled, AI-ready workforce
+      that employers actually need. Trusted by federal agencies, higher
+      education, and regional businesses for nearly two decades.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">18+</div>
+        <div class="stat-label">Years in Maryland</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">4</div>
+        <div class="stat-label">Active Certifications</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">$180K+</div>
+        <div class="stat-label">Grants Managed</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">PG Co.</div>
+        <div class="stat-label">Deeply Rooted</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <div class="hero-badge-icon">🔒</div>
+    <div class="hero-badge-text">Maryland<br>Registered &amp;<br>In Good Standing</div>
+    <div class="hero-badge-since">Est. June 2006</div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ── ABOUT ── -->
+<section class="about" id="about">
+  <div class="section-inner">
+    <div class="section-label">Who We Are</div>
+    <h2 class="section-title">A Practitioner-Led<br><em>Technology Firm</em></h2>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>
+          Best Entrust, LLC is a Maryland-based technology consulting and workforce training firm
+          founded in 2006. We are led by <strong>Andrew H. Mangle, Ph.D.</strong>, a practitioner-educator
+          who brings deep expertise across cybersecurity, artificial intelligence, data analytics,
+          and digital transformation.
+        </p>
+        <p>
+          Our approach is grounded in real-world application. Every training program we design
+          is co-developed with employer partners, benchmarked against labor market data, and
+          delivered using tools that participants will use on day one of employment.
+        </p>
+        <p>
+          We have served federal agencies, higher education institutions, nonprofits, and
+          regional small businesses. Our engagements range from strategic technology advisory
+          to hands-on workforce training cohorts, all anchored in <strong>measurable outcomes</strong>.
+        </p>
+        <p>
+          Prince George's County is our home. We are invested in building the technology
+          talent pipeline that keeps Maryland competitive in the AI era.
+        </p>
+      </div>
+      <div class="about-creds reveal reveal-delay-2">
+        <div class="cred-item">
+          <div class="cred-icon">🎓</div>
+          <div>
+            <div class="cred-name">Ph.D., Business Administration — Morgan State University</div>
+            <div class="cred-desc">Cybersecurity focus. AACSB-accredited institution. Dissertation on adaptive security authentication systems.</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🏛</div>
+          <div>
+            <div class="cred-name">Associate Professor (Tenured), MIS — Bowie State University</div>
+            <div class="cred-desc">8 years. NSA/DHS Center of Academic Excellence. Curriculum Committee Chair. Graduate Program Coordinator.</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">🇺🇸</div>
+          <div>
+            <div class="cred-name">Data Analytics Research Fellow — U.S. Dept. of Homeland Security</div>
+            <div class="cred-desc">2022–2024. Led LLM, blockchain, and data autonomy architecture initiatives for federal operations.</div>
+          </div>
+        </div>
+        <div class="cred-item">
+          <div class="cred-icon">📜</div>
+          <div>
+            <div class="cred-name">Maryland Dept. ID: W11375136 — In Good Standing</div>
+            <div class="cred-desc">Registered June 28, 2006. Fully compliant with Maryland SDAT requirements. Certificate of Status available upon request.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CERTS ── -->
+<div class="certs">
+  <div class="certs-inner">
+    <div class="certs-label">Active<br>Credentials</div>
+    <div class="cert-badge">
+      <span class="cert-abbr">CISSP</span>
+      <span class="cert-full">Certified Information Systems Security Professional</span>
+    </div>
+    <div class="cert-badge">
+      <span class="cert-abbr">CISA</span>
+      <span class="cert-full">Certified Information Systems Auditor</span>
+    </div>
+    <div class="cert-badge">
+      <span class="cert-abbr">CSSLP</span>
+      <span class="cert-full">Certified Secure Software Lifecycle Professional</span>
+    </div>
+    <div class="cert-badge">
+      <span class="cert-abbr">PMP</span>
+      <span class="cert-full">Project Management Professional</span>
+    </div>
+  </div>
+</div>
+
+<!-- ── CAPABILITIES ── -->
+<section class="capabilities" id="capabilities">
+  <div class="section-inner">
+    <div class="section-label">What We Deliver</div>
+    <h2 class="section-title">Core <em>Capabilities</em></h2>
+    <div class="caps-grid">
+      <div class="cap-card reveal">
+        <div class="cap-num">01</div>
+        <div class="cap-title">AI Tools &amp; Automation Training</div>
+        <div class="cap-desc">Hands-on training in applied AI, large 
+language models, workflow automation, and machine learning tools. 
+Curriculum designed around tools employers are actively deploying, not 
+theoretical frameworks.</div>
+        <div class="cap-tags">
+          <span class="tag">LLMs</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">Automation</span>
+          <span class="tag">AI Governance</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-1">
+        <div class="cap-num">02</div>
+        <div class="cap-title">Data Analytics &amp; Digital Operations</div>
+        <div class="cap-desc">From data literacy to full-stack analytics
+ workflows. Training covers data pipelines, visualization, business 
+intelligence tools, and operational reporting aligned to real employer 
+workflows.</div>
+        <div class="cap-tags">
+          <span class="tag">Data Analytics</span>
+          <span class="tag">BI Tools</span>
+          <span class="tag">Digital Ops</span>
+          <span class="tag">SQL / Python</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-2">
+        <div class="cap-num">03</div>
+        <div class="cap-title">Cybersecurity &amp; Risk Management</div>
+        <div class="cap-desc">Security-first technology advisory and 
+training. Deep expertise in NIST 800-53, ISO/IEC 27001, risk assessment,
+ and information assurance drawn from federal, academic, and enterprise 
+engagements.</div>
+        <div class="cap-tags">
+          <span class="tag">NIST</span>
+          <span class="tag">Risk Mgmt</span>
+          <span class="tag">Compliance</span>
+          <span class="tag">InfoSec</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-3">
+        <div class="cap-num">04</div>
+        <div class="cap-title">Curriculum Design &amp; Delivery</div>
+        <div class="cap-desc">Employer-co-designed curricula built 
+around competency-based outcomes. Experience in online, hybrid, and 
+face-to-face delivery with Quality Matters certification and over 30 
+courses developed and delivered.</div>
+        <div class="cap-tags">
+          <span class="tag">CBE</span>
+          <span class="tag">Quality Matters</span>
+          <span class="tag">LMS</span>
+          <span class="tag">Assessment</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-4">
+        <div class="cap-num">05</div>
+        <div class="cap-title">Entrepreneurship &amp; Business Formation</div>
+        <div class="cap-desc">Specialized programming for aspiring 
+entrepreneurs and small business owners integrating digital literacy, 
+fintech fundamentals, and AI-powered business tools to accelerate 
+economic development.</div>
+        <div class="cap-tags">
+          <span class="tag">Entrepreneurship</span>
+          <span class="tag">FinTech</span>
+          <span class="tag">Small Business</span>
+          <span class="tag">Economic Dev</span>
+        </div>
+      </div>
+      <div class="cap-card reveal reveal-delay-5">
+        <div class="cap-num">06</div>
+        <div class="cap-title">Technology Strategy &amp; Advisory</div>
+        <div class="cap-desc">Fractional CIO/CTO services for 
+organizations navigating AI adoption, digital transformation, vendor 
+selection, and technology governance. 18+ years advising government, 
+education, and enterprise clients.</div>
+        <div class="cap-tags">
+          <span class="tag">AI Strategy</span>
+          <span class="tag">Digital Transformation</span>
+          <span class="tag">Fractional CIO</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GRANT FOCUS ── -->
+<section class="grant-focus">
+  <div class="section-inner grant-inner">
+    <div class="section-label">Workforce Development</div>
+    <h2 class="grant-title">Built to Deliver<br><em>Job-Ready Outcomes</em></h2>
+    <p class="grant-desc">
+      Best Entrust designs training programs with a single goal: participants who are ready
+      to contribute from day one. Every program integrates employer co-design, real-tool
+      proficiency, and structured pathways to placement.
+    </p>
+    <div class="pillars">
+      <div class="pillar reveal">
+        <div class="pillar-icon">🤝</div>
+        <div class="pillar-title">Employer-Led Design</div>
+        <div class="pillar-text">Curricula developed with and validated 
+by employer partners. Skills maps built from actual job descriptions and
+ employer interviews, not textbooks.</div>
+      </div>
+      <div class="pillar reveal reveal-delay-2">
+        <div class="pillar-icon">📊</div>
+        <div class="pillar-title">Data-Driven Evidence</div>
+        <div class="pillar-text">Training plans grounded in Maryland 
+labor market data, BLS projections, and regional skills gap analysis. We
+ quantify the need before we propose the solution.</div>
+      </div>
+      <div class="pillar reveal reveal-delay-4">
+        <div class="pillar-icon">🎯</div>
+        <div class="pillar-title">Placement-Focused</div>
+        <div class="pillar-text">Every cohort includes structured job 
+placement support, employer connection events, and retention 
+follow-through. Training is not complete until participants are 
+employed.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TRACK RECORD ── -->
+<section class="track" id="track-record">
+  <div class="section-inner">
+    <div class="section-label">Proven Experience</div>
+    <h2 class="section-title">Selected<br><em>Engagements</em></h2>
+    <div class="track-grid">
+      <div class="track-item reveal">
+        <div class="track-org">U.S. Department of Homeland Security</div>
+        <div class="track-role">Data Analytics Research Fellow</div>
+        <div class="track-years">2022 – 2024</div>
+        <div class="track-detail">Directed AI and data architecture 
+initiatives involving large language models, blockchain, and data 
+autonomy frameworks for mission-critical federal applications. 
+Contributed to a DHS patent on Web 3.0 and blockchain data architecture.</div>
+      </div>
+      <div class="track-item reveal reveal-delay-1">
+        <div class="track-org">Bowie State University — Prince George's County</div>
+        <div class="track-role">Tenured Associate Professor, MIS</div>
+        <div class="track-years">2017 – Present</div>
+        <div class="track-detail">Leads AI, cybersecurity, and emerging 
+technology curriculum at an NSA/DHS-designated Center of Academic 
+Excellence. 8 years of curriculum design, graduate advising, and applied
+ technology instruction serving a majority-minority institution in PG 
+County.</div>
+      </div>
+      <div class="track-item reveal reveal-delay-2">
+        <div class="track-org">Interledger Foundation</div>
+        <div class="track-role">Principal Investigator — AI &amp; FinTech Training Program</div>
+        <div class="track-years">2022 – Present</div>
+        <div class="track-detail">Managed $180,000 across two grant 
+awards. Designed and delivered AI-integrated digital finance curriculum,
+ connecting students to global fintech networks. Demonstrates proven 
+grant management and accountability at scale.</div>
+      </div>
+      <div class="track-item reveal reveal-delay-3">
+        <div class="track-org">Therapeutic Alternatives of Maryland</div>
+        <div class="track-role">Board of Directors / Chief Technology Officer</div>
+        <div class="track-years">2016 – 2020</div>
+        <div class="track-detail">Board-level technology strategy, 
+vendor management, and digital engagement for a Maryland healthcare 
+nonprofit. Directly analogous to the fractional, outcome-driven 
+engagement model used in workforce training partnerships.</div>
+      </div>
+      <div class="track-item reveal reveal-delay-1">
+        <div class="track-org">Northrup Grumman — Faculty Research Collaboration</div>
+        <div class="track-role">Co-Principal Investigator</div>
+        <div class="track-years">2023 – Present</div>
+        <div class="track-detail">$40,000 industry-funded engagement 
+producing deliverables aligned with employer needs in emerging 
+technologies and market research. Demonstrates ability to translate 
+industry requirements into structured academic and training outcomes.</div>
+      </div>
+      <div class="track-item reveal reveal-delay-2">
+        <div class="track-org">U.S. Army CERDEC (ORISE)</div>
+        <div class="track-role">Faculty Research — Strategic Cyber Management</div>
+        <div class="track-years">Summer 2015</div>
+        <div class="track-detail">Evaluated Department of Defense 
+cybersecurity posture, recommended tactical cyber strategies, and 
+assessed capability gaps. Established track record of security advisory 
+at the federal level.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-label">Get In Touch</div>
+    <h2 class="section-title">Ready to <em>Partner</em></h2>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p>
+          Best Entrust brings nearly two decades of Maryland-based technology consulting
+          and workforce development experience to every engagement. We are actively
+          partnering with regional organizations, employers, and economic development
+          entities to build the AI-ready talent pipeline Prince George's County needs.
+        </p>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">✉</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-val">amangle@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📞</div>
+          <div>
+            <div class="contact-detail-label">Phone</div>
+            <div class="contact-detail-val">443.536.3399</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">📍</div>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-val">Baltimore, Maryland</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon">🔗</div>
+          <div>
+            <div class="contact-detail-label">LinkedIn</div>
+            <div class="contact-detail-val">linkedin.com/in/andrew-mangle</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-box reveal reveal-delay-2">
+        <div class="contact-box-title">Firm Information</div>
+        <div class="contact-box-sub">For verification and grant documentation purposes</div>
+        <div class="info-row">
+          <span class="info-key">Legal Name</span>
+          <span class="info-val">Best Entrust, LLC</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">State of Formation</span>
+          <span class="info-val">Maryland</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">MD Dept. ID</span>
+          <span class="info-val">W11375136</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Date Established</span>
+          <span class="info-val">June 28, 2006</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Standing</span>
+          <span class="info-val" style="color: #6fcf97;">In Good Standing ✓</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Entity Type</span>
+          <span class="info-val">Limited Liability Company</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Principal</span>
+          <span class="info-val">Andrew H. Mangle, Ph.D.</span>
+        </div>
+        <div class="info-row">
+          <span class="info-key">Credentials</span>
+          <span class="info-val">CISSP · CISA · CSSLP · PMP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-brand">Best Entrust, LLC</div>
+  <div class="footer-note">
+    Maryland Technology Consulting &amp; Workforce Training · Est. 2006<br>
+    MD Dept. ID: W11375136 · Baltimore, Maryland
+  </div>
+</footer>
+
+<script>
+  // Scroll reveal
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  // Immediately reveal elements in initial viewport
+  reveals.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
+  });
+</script>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
