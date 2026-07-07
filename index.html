@@ -278,6 +278,22 @@
   .cred-name { font-weight: 600; font-size: 0.9rem; color: var(--cream); margin-bottom: 0.15rem; }
   .cred-desc { font-size: 0.8rem; color: var(--muted); line-height: 1.5; }
 
+
+  /* ── FLAGSHIP ── */
+  .flagship { background: linear-gradient(180deg, var(--navy2), var(--navy)); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .flagship-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.5px; background: var(--border); border: 1px solid var(--border); margin-top: 3rem; }
+  .flag-card { background: var(--navy2); padding: 2.75rem 2.25rem; position: relative; }
+  .flag-card::before { content: ''; position: absolute; top:0; left:0; right:0; height:3px; background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+  .flag-kicker { font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); font-weight: 600; margin-bottom: 0.9rem; }
+  .flag-title { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: var(--white); margin-bottom: 0.8rem; line-height: 1.2; }
+  .flag-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.65; margin-bottom: 1.4rem; }
+  .flag-price { font-family: var(--serif); font-size: 1.15rem; color: var(--gold); margin-bottom: 1.4rem; }
+  .flag-price span { font-size: 0.78rem; font-family: inherit; color: var(--muted); }
+  .flag-cta { display: inline-block; background: linear-gradient(90deg, var(--gold), var(--gold2)); color: var(--navy); font-weight: 700; font-size: 0.88rem; padding: 0.85rem 1.6rem; border-radius: 4px; text-decoration: none; transition: transform 0.15s; }
+  .flag-cta:hover { transform: translateY(-1px); }
+  .flag-cta.ghost { background: none; border: 1px solid var(--gold); color: var(--gold); }
+  @media (max-width: 1000px) { .flagship-grid { grid-template-columns: 1fr; } }
+
   /* ── CAPABILITIES ── */
   .capabilities { background: var(--navy); }
   .caps-grid {
@@ -629,6 +645,7 @@
     <span class="nav-brand">Best Entrust, LLC</span>
   </a>
   <ul class="nav-links">
+    <li><a href="#flagship">AI Readiness</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#capabilities">Capabilities</a></li>
     <li><a href="#track-record">Track Record</a></li>
@@ -656,7 +673,7 @@
     </p>
     <div class="hero-stats">
       <div class="stat">
-        <div class="stat-num">18+</div>
+        <div class="stat-num">45+</div>
         <div class="stat-label">Years in Maryland</div>
       </div>
       <div class="stat">
@@ -767,6 +784,39 @@
   </div>
 </div>
 
+
+<!-- ── FLAGSHIP: AI READINESS ── -->
+<section class="flagship" id="flagship">
+  <div class="section-inner">
+    <div class="section-label">Flagship — AI Readiness</div>
+    <h2 class="section-title">Know Where Your Organization<br><em>Actually Stands on AI</em></h2>
+    <div class="flagship-grid">
+      <div class="flag-card reveal">
+        <div class="flag-kicker">Step 1 · Free Instrument</div>
+        <div class="flag-title">The AI Readiness Index</div>
+        <div class="flag-desc">Fourteen questions across seven dimensions — data, use cases, workforce, security, governance, leadership, and financial discipline. A scored profile out of 100, a spider-graph view of your strengths, and a practitioner-reviewed briefing within 48 hours.</div>
+        <div class="flag-price">Free <span>· 15 minutes · reviewed by a practitioner</span></div>
+        <a href="airindex.html" class="flag-cta">Score my organization →</a>
+      </div>
+      <div class="flag-card reveal reveal-delay-1">
+        <div class="flag-kicker">Step 2 · Evidence, Not Opinions</div>
+        <div class="flag-title">The AI Readiness Deep Assessment</div>
+        <div class="flag-desc">A two-week, interview-based engagement that replaces self-report with evidence: stakeholder interviews, document review, an evidence-based rescore across all seven dimensions, and a prioritized 12-month roadmap your board can defend.</div>
+        <div class="flag-price">$9,500 <span>· orgs under 1,000 employees</span> &nbsp;·&nbsp; $20,000 <span>· larger or multi-entity</span></div>
+        <a href="deepassessment.html" class="flag-cta ghost">See the full offer &amp; pricing →</a>
+      </div>
+      <div class="flag-card reveal reveal-delay-2">
+        <div class="flag-kicker">Step 3 · Independent Assurance</div>
+        <div class="flag-title">AI Governance Audit &amp; Assurance</div>
+        <div class="flag-desc">Independent AI governance audits and ISO/IEC 42001 &amp; NIST AI RMF readiness assessments for mid-market regulated organizations — financial services, healthcare, and defense subcontractors. Audit and advisory only, never implementation: our findings stay independent, which is why they're defensible to a board, a regulator, or an examiner.</div>
+        <div class="flag-price">$25,000–$60,000 <span>· fixed-fee audit engagement</span></div>
+        <a href="aigovernance.html" class="flag-cta ghost">See the service description →</a>
+      </div>
+    </div>
+    <p style="margin-top:1.5rem;font-size:0.88rem;color:var(--muted);max-width:70ch;">Ongoing assurance: quarterly attestation &amp; monitoring retainers, and Fractional AI Governance Officer engagements — <strong style="color:var(--gold);">$9,500/month</strong> for organizations under 1,000 employees, <strong style="color:var(--gold);">$15,000/month</strong> for larger organizations. <a href="aigovernance.html" style="color:var(--gold);">Details →</a></p>
+  </div>
+</section>
+
 <!-- ── CAPABILITIES ── -->
 <section class="capabilities" id="capabilities">
   <div class="section-inner">
@@ -803,15 +853,13 @@ workflows.</div>
       </div>
       <div class="cap-card reveal reveal-delay-2">
         <div class="cap-num">03</div>
-        <div class="cap-title">Cybersecurity &amp; Risk Management</div>
-        <div class="cap-desc">Security-first technology advisory and 
-training. Deep expertise in NIST 800-53, ISO/IEC 27001, risk assessment,
- and information assurance drawn from federal, academic, and enterprise 
-engagements.</div>
+        <div class="cap-title">Cybersecurity, Risk &amp; AI Governance</div>
+        <div class="cap-desc">Security-first advisory, independent AI governance audits, and ISO/IEC 42001 &amp; NIST AI RMF readiness assessments. Deep expertise in NIST 800-53, ISO/IEC 27001, COBIT, risk assessment, and information assurance drawn from federal, academic, and enterprise engagements — including a DHS fellowship focused on LLM evaluation.</div>
         <div class="cap-tags">
-          <span class="tag">NIST</span>
+          <span class="tag">NIST AI RMF</span>
+          <span class="tag">ISO 42001</span>
+          <span class="tag">AI Audit</span>
           <span class="tag">Risk Mgmt</span>
-          <span class="tag">Compliance</span>
           <span class="tag">InfoSec</span>
         </div>
       </div>
