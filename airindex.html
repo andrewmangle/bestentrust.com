@@ -117,9 +117,27 @@ h1,h2,h3{font-family:'Space Grotesk',sans-serif;}
 footer{text-align:center;font-size:12px;color:var(--paper-dim);padding:30px 0 10px;border-top:1px solid var(--line);margin-top:50px;}
 footer a{color:var(--amber);text-decoration:none;}
 @media(max-width:560px){.stat-row{grid-template-columns:repeat(2,1fr);}}
+
+/* ── nav ── */
+nav{display:flex;align-items:center;justify-content:space-between;max-width:760px;margin:0 auto;padding:18px 22px 0;}
+.nav-brand{font-family:'Space Grotesk';font-weight:700;font-size:15px;color:var(--paper);text-decoration:none;letter-spacing:.02em;}
+.nav-brand span{color:var(--amber);}
+.nav-links{display:flex;gap:22px;list-style:none;}
+.nav-links a{font-size:13px;color:var(--paper-dim);text-decoration:none;transition:color .15s;}
+.nav-links a:hover,.nav-links a.on{color:var(--amber);}
+@media(max-width:640px){.nav-links{gap:14px;}.nav-links .hide-sm{display:none;}}
 </style>
 </head>
 <body>
+<nav>
+  <a href="index.html" class="nav-brand">Best <span>Entrust</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li class="hide-sm"><a href="airindex.html" class="on">AI Readiness Index</a></li>
+    <li><a href="deepassessment.html">Deep Assessment</a></li>
+    <li><a href="aigovernance.html">AI Governance</a></li>
+  </ul>
+</nav>
 <main>
 
 <div class="progress-wrap" id="progress" style="display:none;">
