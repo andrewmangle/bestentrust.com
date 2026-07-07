@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Governance Audit &amp; Assurance — Best Entrust, LLC</title>
+<meta name="description" content="Independent AI governance audits and ISO/IEC 42001 & NIST AI RMF readiness assessments for mid-market regulated organizations. Fixed fees, audit and advisory only — never implementation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D1321; --panel:#1D2D44; --panel-2:#24364F; --line:#33465F;
+  --amber:#E3A72F; --amber-dim:rgba(227,167,47,.14); --amber-line:rgba(227,167,47,.35);
+  --paper:#F5F3EE; --paper-dim:#A9B2BF; --red:#C34A36; --red-dim:rgba(195,74,54,.15);
+  --green:#4C9F70; --r:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--paper);line-height:1.6;font-size:16px;}
+main{max-width:820px;margin:0 auto;padding:40px 22px 90px;}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;}
+a{color:var(--amber);}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:22px;}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--amber);}
+.hero h1{font-size:clamp(32px,6.5vw,50px);line-height:1.06;font-weight:700;letter-spacing:-.01em;margin-bottom:16px;}
+.hero h1 em{font-style:normal;color:var(--amber);}
+.hero-sub{font-size:17px;color:var(--paper-dim);max-width:62ch;margin-bottom:26px;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:34px;}
+.stat{background:var(--panel);padding:14px 10px;text-align:center;}
+.stat b{display:block;font-family:'Space Grotesk';font-size:20px;color:var(--amber);}
+.stat span{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-dim);}
+.section-tag{display:inline-block;font-family:'Space Grotesk';font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:var(--amber);padding:4px 12px;border-radius:3px;margin:44px 0 14px;}
+h2{font-size:26px;font-weight:700;margin-bottom:10px;}
+.body-copy{font-size:15px;color:var(--paper-dim);max-width:64ch;margin-bottom:18px;}
+.body-copy strong{color:var(--paper);}
+.independence{border-left:3px solid var(--amber);background:var(--amber-dim);padding:16px 20px;border-radius:0 var(--r) var(--r) 0;font-size:14.5px;margin:8px 0 8px;}
+.independence b{color:var(--amber);}
+/* service cards */
+.svc{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:24px 22px;margin-bottom:14px;}
+.svc.feature{border-color:var(--amber-line);background:linear-gradient(180deg,var(--panel-2),var(--panel));}
+.svc-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:8px;font-family:'Space Grotesk';font-weight:600;}
+.svc h3{font-size:19px;margin-bottom:8px;}
+.svc p{font-size:14px;color:var(--paper-dim);margin-bottom:12px;}
+.svc p strong{color:var(--paper);}
+.svc-price{font-family:'Space Grotesk';font-size:26px;font-weight:700;color:var(--amber);line-height:1.15;}
+.svc-price small{display:block;font-family:'Inter';font-size:12.5px;font-weight:400;color:var(--paper-dim);margin-top:4px;}
+.price-split{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px;}
+.price-cell{border:1px solid var(--line);border-radius:8px;background:var(--panel-2);padding:14px 16px;}
+.price-cell b{display:block;font-family:'Space Grotesk';font-size:22px;color:var(--amber);}
+.price-cell span{font-size:12px;color:var(--paper-dim);}
+@media(max-width:560px){.price-split{grid-template-columns:1fr;}.stat-row{grid-template-columns:repeat(2,1fr);}}
+/* deliverables list */
+.next-list{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}
+.next-item{display:flex;gap:14px;background:var(--panel);padding:15px 18px;border-bottom:1px solid var(--line);font-size:14px;}
+.next-item:last-child{border-bottom:none;}
+.next-num{flex:none;font-family:'Space Grotesk';font-weight:700;color:var(--amber);}
+.next-item b{color:var(--paper);}
+.next-item div:last-child{color:var(--paper-dim);}
+/* who */
+.who{display:flex;gap:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:22px;margin-bottom:8px;}
+.who-badge{flex:none;width:54px;height:54px;border-radius:50%;background:var(--amber);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:18px;}
+.who p{font-size:14px;color:var(--paper-dim);}
+.who b{color:var(--paper);}
+/* form */
+.field{margin-bottom:16px;}
+.field label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--paper-dim);margin-bottom:6px;}
+.field input,.field select,.field textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:15px;color:var(--paper);font-family:'Inter';}
+.field textarea{min-height:110px;resize:vertical;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber);}
+.req{color:var(--amber);}
+.btn-next{font-family:'Space Grotesk';display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:var(--ink);font-size:15px;font-weight:600;border:none;padding:14px 26px;border-radius:var(--r);cursor:pointer;transition:transform .12s;text-decoration:none;}
+.btn-next:hover{transform:translateY(-1px);}
+.btn-next:disabled{opacity:.35;cursor:not-allowed;transform:none;}
+.err{display:none;margin-top:14px;padding:12px 14px;background:var(--red-dim);border-radius:8px;font-size:13px;color:#E8988A;}
+.thanks{display:none;text-align:center;padding:30px 0 10px;}
+.thanks h2{font-size:30px;margin-bottom:12px;}
+.thanks h2 em{font-style:normal;color:var(--amber);}
+.thanks p{color:var(--paper-dim);max-width:52ch;margin:0 auto 22px;}
+footer{text-align:center;font-size:12px;color:var(--paper-dim);padding:30px 0 10px;border-top:1px solid var(--line);margin-top:60px;}
+footer a{color:var(--amber);text-decoration:none;}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="eyebrow">Best Entrust, LLC · Independent Assurance</div>
+  <h1>AI Governance <em>Audit &amp; Assurance</em></h1>
+  <p class="hero-sub">Independent AI governance audits and ISO/IEC 42001 &amp; NIST AI RMF readiness assessments for mid-market regulated organizations. Fixed fees. Audit and advisory only — never implementation.</p>
+  <div class="stat-row">
+    <div class="stat"><b>ISO 42001</b><span>Readiness</span></div>
+    <div class="stat"><b>NIST AI RMF</b><span>Mapped</span></div>
+    <div class="stat"><b>Fixed</b><span>Fee</span></div>
+    <div class="stat"><b>Independent</b><span>By design</span></div>
+  </div>
+</div>
+
+<!-- THE GAP -->
+<span class="section-tag">The gap this fills</span>
+<h2>Mid-market regulated companies are asking for help and not getting it.</h2>
+<p class="body-copy">The large consulting firms serve the Fortune 500 at Fortune 500 prices. Hiring your own AI governance lead means competing in a market where organizations overwhelmingly report needing more governance capacity than they have, and where the hiring cycle for these roles runs months, not weeks. A regional bank, health system, or defense subcontractor cannot pay Big Four rates and cannot wait half a year for one candidate — but the regulatory expectations arrive on schedule regardless.</p>
+<p class="body-copy">Best Entrust exists in that gap: <strong>independent, practitioner-led AI governance assurance sized and priced for the mid-market</strong> — financial services, healthcare, and defense subcontractors in particular.</p>
+
+<!-- INDEPENDENCE -->
+<span class="section-tag">Why independence matters</span>
+<div class="independence"><b>Audit and advisory only. Never implementation.</b> A firm that sells implementation on the back end has an incentive to find problems it can be paid to fix. We don't build what we audit — which is why our findings are defensible to a board, a regulator, or an examiner. Independence isn't a limitation of the model. It is the product.</div>
+
+<!-- SERVICES -->
+<span class="section-tag">The services</span>
+
+<div class="svc feature">
+  <div class="svc-kicker">Core engagement · Fixed fee</div>
+  <h3>AI Governance Audit &amp; Readiness Assessment</h3>
+  <p>An independent audit of your AI governance posture, mapped to <strong>ISO/IEC 42001</strong> and the <strong>NIST AI Risk Management Framework</strong>, with crosswalks to COBIT and ISO/IEC 27001 where your existing control environment already lives. Covers AI inventory and classification, policy and accountability structures, risk assessment practices, documentation sufficiency, vendor and model governance, and monitoring controls.</p>
+  <div class="next-list" style="margin-bottom:14px;">
+    <div class="next-item"><div class="next-num">1</div><div><b>Scored readiness assessment</b> — where you stand against ISO 42001 and NIST AI RMF expectations, with evidence cited for every finding.</div></div>
+    <div class="next-item"><div class="next-num">2</div><div><b>Gap register with prioritization</b> — each gap rated by regulatory exposure and remediation effort, with owners and sequence.</div></div>
+    <div class="next-item"><div class="next-num">3</div><div><b>Board- and examiner-ready report</b> — written to be shown to the people who will ask, plus an executive briefing session.</div></div>
+  </div>
+  <div class="svc-price">$25,000 – $60,000<small>Fixed fee, set at scoping based on AI footprint, entity count, and regulatory scope — agreed before work begins, never hourly.</small></div>
+</div>
+
+<div class="svc">
+  <div class="svc-kicker">Recurring layer · Quarterly</div>
+  <h3>Attestation &amp; Monitoring Retainers</h3>
+  <p>Governance isn't a point-in-time exercise — frameworks, models, and regulatory expectations all move. Quarterly independent attestation keeps your evidence current: control re-testing, documentation review, change assessment for new AI deployments, and a standing quarterly attestation letter your compliance function can file.</p>
+</div>
+
+<div class="svc">
+  <div class="svc-kicker">Recurring layer · Monthly</div>
+  <h3>Fractional AI Governance Officer</h3>
+  <p>Emerging frameworks increasingly expect organizations to designate an accountable AI governance lead. Retain the function instead of running the search: a named, credentialed practitioner who owns your AI governance calendar, chairs your AI review process, maintains the documentation regulators expect, and briefs your board — without the implementation conflicts of interest.</p>
+  <p>The scope covers the full demand side of AI leadership, not just compliance: <strong>the AI use-case roadmap</strong> — identifying and prioritizing where AI creates measurable value across your functions; <strong>ROI prioritization and business cases</strong> your CFO and board can act on; and <strong>an adoption framework</strong> that coaches your functional leaders through the change. Your IT team and vendors own the build. We own the what, the why, and whether it's working.</p>
+  <p><strong>The market context:</strong> hiring this role full-time means competing for candidates commanding $400K–$570K in total compensation, with time-to-hire for AI governance and strategy roles running four to six months — if the search yields at all. The fractional model delivers the same accountable function at a fraction of the cost, starting in weeks, not quarters.</p>
+  <div class="price-split">
+    <div class="price-cell"><b>$9,500<span style="font-size:14px;">/month</span></b><span>Organizations under 1,000 employees</span></div>
+    <div class="price-cell"><b>$15,000<span style="font-size:14px;">/month</span></b><span>Organizations of 1,000+ employees</span></div>
+  </div>
+</div>
+
+<!-- HOW IT CONNECTS -->
+<span class="section-tag">Where to start</span>
+<p class="body-copy">Not sure you need a full audit yet? Start upstream: the free <a href="airindex.html">AI Readiness Index</a> scores your posture in 15 minutes, and the <a href="deepassessment.html">Deep Assessment</a> ($9,500 / $20,000) replaces self-report with evidence. Both feed directly into audit scoping — nothing you do earlier is wasted.</p>
+
+<!-- WHO -->
+<span class="section-tag">Who conducts it</span>
+<div class="who">
+  <div class="who-badge">AM</div>
+  <p><b>Dr. Andrew Mangle — CISSP, CISA, CSSLP, PMP.</b> DHS fellowship focused on LLM evaluation. Published work mapping AI governance to NIST AI RMF, COBIT, and ISO/IEC 27001. Eighteen years across enterprise technology, security consulting for public and private entities, and faculty in Management Information Systems. The CISA matters here specifically: independent audit and assurance is what it certifies — and a practitioner with no implementation practice behind the audit is more credible as an independent auditor, not less.</p>
+</div>
+
+<!-- CONTACT FORM -->
+<span class="section-tag" id="contact">Start the conversation</span>
+<h2>Request a scoping conversation</h2>
+<p class="body-copy">Tell us about your organization and we'll be in contact within one business day. First conversations are free and carry no obligation — including a 60-minute AI risk exposure review if you'd like one.</p>
+
+<div id="form-area">
+  <div class="field"><label>Name <span class="req">*</span></label><input id="f-name" type="text" autocomplete="name"></div>
+  <div class="field"><label>Work email <span class="req">*</span></label><input id="f-email" type="email" autocomplete="email"></div>
+  <div class="field"><label>Organization <span class="req">*</span></label><input id="f-org" type="text" autocomplete="organization"></div>
+  <div class="field"><label>Sector <span class="req">*</span></label>
+    <select id="f-sector">
+      <option value="">Select…</option>
+      <option>Financial services / Banking / Insurance</option>
+      <option>Healthcare / Life sciences</option>
+      <option>Defense / Government contracting</option>
+      <option>Government / Public sector</option>
+      <option>Higher education</option>
+      <option>Technology / Software</option>
+      <option>Energy / Utilities</option>
+      <option>Other regulated industry</option>
+      <option>Other</option>
+    </select>
+  </div>
+  <div class="field"><label>Organization size <span class="req">*</span></label>
+    <select id="f-size">
+      <option value="">Select…</option>
+      <option>Under 50 employees</option>
+      <option>50–250 employees</option>
+      <option>250–1,000 employees</option>
+      <option>1,000–5,000 employees</option>
+      <option>Over 5,000 employees</option>
+    </select>
+  </div>
+  <div class="field"><label>What are you looking for? <span class="req">*</span></label>
+    <select id="f-interest">
+      <option value="">Select…</option>
+      <option>AI governance audit / readiness assessment</option>
+      <option>Quarterly attestation &amp; monitoring retainer</option>
+      <option>Fractional AI Governance Officer</option>
+      <option>Free 60-minute AI risk exposure review</option>
+      <option>Not sure yet — help me figure it out</option>
+    </select>
+  </div>
+  <div class="field"><label>What's driving the timing? (optional)</label><textarea id="f-msg" placeholder="Examiner question, board directive, new AI deployment, vendor risk concern, upcoming audit…"></textarea></div>
+  <button class="btn-next" id="submit-btn" onclick="submitForm()">Request the conversation →</button>
+  <div class="err" id="err"></div>
+</div>
+
+<!-- THANK YOU -->
+<div class="thanks" id="thanks">
+  <h2>Thank you — <em>we're on it.</em></h2>
+  <p>Your request has been received. Someone from Best Entrust will be in contact within <b>one business day</b> to schedule the conversation.</p>
+  <p>In the meantime, the free instrument gives us both a head start on scoping.</p>
+  <a href="airindex.html" class="btn-next" style="text-decoration:none;">Take the AI Readiness Index →</a>
+</div>
+
+<!-- HIDDEN FORM -->
+<form id="fs" action="https://formspree.io/f/maqgkdrn" method="POST" style="display:none;">
+  <input type="hidden" name="_subject" id="fs-subject">
+  <input type="hidden" name="engagement" value="AI Governance Audit &amp; Assurance">
+  <input type="hidden" name="name" id="fs-name">
+  <input type="hidden" name="email" id="fs-email">
+  <input type="hidden" name="organization" id="fs-org">
+  <input type="hidden" name="sector" id="fs-sector">
+  <input type="hidden" name="org_size" id="fs-size">
+  <input type="hidden" name="interest" id="fs-interest">
+  <input type="hidden" name="message" id="fs-msg">
+  <input type="hidden" name="submitted_at" id="fs-time">
+</form>
+
+<footer>AI Governance Audit &amp; Assurance · A Best Entrust, LLC product · Maryland · Audit and advisory only — never implementation<br>
+<a href="https://bestentrust.com">bestentrust.com</a> · <a href="airindex.html">Free AI Readiness Index</a> · <a href="deepassessment.html">Deep Assessment</a> · hello@andrewmangle.com</footer>
+</main>
+
+<script>
+function submitForm(){
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const org=document.getElementById('f-org').value.trim();
+  const sector=document.getElementById('f-sector').value;
+  const size=document.getElementById('f-size').value;
+  const interest=document.getElementById('f-interest').value;
+  const err=document.getElementById('err');
+  if(!name||!email||!org||!sector||!size||!interest){
+    err.style.display='block';err.textContent='Please complete all required fields so we can route your request correctly.';
+    return;
+  }
+  err.style.display='none';
+  document.getElementById('fs-subject').value=`AI Governance — ${interest} — ${org} (${sector}, ${size})`;
+  document.getElementById('fs-name').value=name;
+  document.getElementById('fs-email').value=email;
+  document.getElementById('fs-org').value=org;
+  document.getElementById('fs-sector').value=sector;
+  document.getElementById('fs-size').value=size;
+  document.getElementById('fs-interest').value=interest;
+  document.getElementById('fs-msg').value=document.getElementById('f-msg').value.trim();
+  document.getElementById('fs-time').value=new Date().toISOString();
+  const btn=document.getElementById('submit-btn');
+  btn.disabled=true;btn.textContent='Sending…';
+  const form=document.getElementById('fs');
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('form-area').style.display='none';
+        document.getElementById('thanks').style.display='block';
+        window.scrollTo({top:document.getElementById('thanks').offsetTop-80,behavior:'smooth'});
+      }else{throw new Error('send failed');}
+    })
+    .catch(()=>{btn.disabled=false;btn.textContent='Request the conversation →';
+      err.style.display='block';err.textContent='Something went wrong sending your request. Please try again, or email hello@andrewmangle.com directly.';});
+}
+</script>
+</body>
+</html>
