@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The AI Readiness Deep Assessment — Best Entrust, LLC</title>
+<meta name="description" content="Two weeks. Evidence, not opinions. A scored, defensible answer to the question your board is already asking. Fixed, transparent pricing from Best Entrust, LLC.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0D1321; --panel:#1D2D44; --panel-2:#24364F; --line:#33465F;
+  --amber:#E3A72F; --amber-dim:rgba(227,167,47,.14); --amber-line:rgba(227,167,47,.35);
+  --paper:#F5F3EE; --paper-dim:#A9B2BF; --red:#C34A36; --red-dim:rgba(195,74,54,.15);
+  --green:#4C9F70; --r:10px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Inter',sans-serif;background:var(--ink);color:var(--paper);line-height:1.6;font-size:16px;}
+main{max-width:820px;margin:0 auto;padding:40px 22px 90px;}
+h1,h2,h3{font-family:'Space Grotesk',sans-serif;}
+a{color:var(--amber);}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--amber);margin-bottom:22px;}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--amber);}
+.hero h1{font-size:clamp(32px,6.5vw,50px);line-height:1.06;font-weight:700;letter-spacing:-.01em;margin-bottom:16px;}
+.hero h1 em{font-style:normal;color:var(--amber);}
+.hero-sub{font-size:17px;color:var(--paper-dim);max-width:60ch;margin-bottom:26px;}
+.stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:34px;}
+.stat{background:var(--panel);padding:14px 10px;text-align:center;}
+.stat b{display:block;font-family:'Space Grotesk';font-size:22px;color:var(--amber);}
+.stat span{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--paper-dim);}
+.section-tag{display:inline-block;font-family:'Space Grotesk';font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);background:var(--amber);padding:4px 12px;border-radius:3px;margin:44px 0 14px;}
+h2{font-size:26px;font-weight:700;margin-bottom:10px;}
+.body-copy{font-size:15px;color:var(--paper-dim);max-width:64ch;margin-bottom:18px;}
+.body-copy strong{color:var(--paper);}
+/* phases */
+.phase{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:14px;}
+.phase-head{display:flex;align-items:center;gap:14px;background:var(--panel-2);padding:14px 18px;border-bottom:1px solid var(--line);}
+.phase-wk{font-family:'Space Grotesk';font-weight:700;font-size:13px;color:var(--ink);background:var(--amber);padding:3px 10px;border-radius:3px;flex:none;}
+.phase-name{font-family:'Space Grotesk';font-weight:600;font-size:16px;}
+.phase-body{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);}
+.phase-cell{background:var(--panel);padding:16px 18px;}
+.phase-cell h4{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--amber);margin-bottom:8px;font-family:'Space Grotesk';}
+.phase-cell p{font-size:13.5px;color:var(--paper-dim);}
+.phase-cell p strong{color:var(--paper);}
+/* dimensions */
+.dim-list{border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}
+.dim-row{display:flex;gap:14px;background:var(--panel);padding:14px 18px;border-bottom:1px solid var(--line);font-size:14px;}
+.dim-row:last-child{border-bottom:none;}
+.dim-name{flex:none;width:230px;font-weight:600;font-family:'Space Grotesk';font-size:13.5px;}
+.dim-q{color:var(--paper-dim);font-size:13.5px;}
+@media(max-width:620px){.dim-row{flex-direction:column;gap:4px;}.dim-name{width:auto;}.phase-body{grid-template-columns:1fr;}}
+/* pricing */
+.price-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:8px 0 14px;}
+@media(max-width:620px){.price-grid{grid-template-columns:1fr;}.stat-row{grid-template-columns:repeat(2,1fr);}}
+.price-card{border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:24px 22px;position:relative;}
+.price-card.feature{border-color:var(--amber-line);background:linear-gradient(180deg,var(--panel-2),var(--panel));}
+.price-scope{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--paper-dim);margin-bottom:10px;font-family:'Space Grotesk';font-weight:600;}
+.price-num{font-family:'Space Grotesk';font-size:40px;font-weight:700;color:var(--amber);line-height:1;margin-bottom:6px;}
+.price-note{font-size:13px;color:var(--paper-dim);}
+.price-credit{border-left:3px solid var(--amber);background:var(--amber-dim);padding:14px 18px;border-radius:0 var(--r) var(--r) 0;font-size:14px;margin-bottom:8px;}
+.price-credit b{color:var(--amber);}
+.honesty{border:1px solid var(--amber-line);background:var(--amber-dim);border-radius:var(--r);padding:18px 20px;margin:26px 0 8px;}
+.honesty h3{font-size:16px;color:var(--amber);margin-bottom:6px;}
+.honesty p{font-size:14px;color:var(--paper);}
+/* who */
+.who{display:flex;gap:18px;border:1px solid var(--line);border-radius:var(--r);background:var(--panel);padding:22px;margin-bottom:8px;}
+.who-badge{flex:none;width:54px;height:54px;border-radius:50%;background:var(--amber);color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:'Space Grotesk';font-weight:700;font-size:18px;}
+.who p{font-size:14px;color:var(--paper-dim);}
+.who b{color:var(--paper);}
+/* form */
+.field{margin-bottom:16px;}
+.field label{display:block;font-size:12.5px;font-weight:600;letter-spacing:.04em;color:var(--paper-dim);margin-bottom:6px;}
+.field input,.field select,.field textarea{width:100%;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px 14px;font-size:15px;color:var(--paper);font-family:'Inter';}
+.field textarea{min-height:110px;resize:vertical;}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--amber);}
+.req{color:var(--amber);}
+.btn-next{font-family:'Space Grotesk';display:inline-flex;align-items:center;gap:9px;background:var(--amber);color:var(--ink);font-size:15px;font-weight:600;border:none;padding:14px 26px;border-radius:var(--r);cursor:pointer;transition:transform .12s;text-decoration:none;}
+.btn-next:hover{transform:translateY(-1px);}
+.btn-next:disabled{opacity:.35;cursor:not-allowed;transform:none;}
+.btn-ghost{background:none;border:1px solid var(--amber);color:var(--amber);}
+.err{display:none;margin-top:14px;padding:12px 14px;background:var(--red-dim);border-radius:8px;font-size:13px;color:#E8988A;}
+/* thanks */
+.thanks{display:none;text-align:center;padding:30px 0 10px;}
+.thanks h2{font-size:30px;margin-bottom:12px;}
+.thanks h2 em{font-style:normal;color:var(--amber);}
+.thanks p{color:var(--paper-dim);max-width:52ch;margin:0 auto 22px;}
+footer{text-align:center;font-size:12px;color:var(--paper-dim);padding:30px 0 10px;border-top:1px solid var(--line);margin-top:60px;}
+footer a{color:var(--amber);text-decoration:none;}
+@media (prefers-reduced-motion: reduce){*{transition:none !important;}}
+</style>
+</head>
+<body>
+<main>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="eyebrow">Best Entrust, LLC · Practitioner Engagement</div>
+  <h1>The AI Readiness <em>Deep Assessment</em></h1>
+  <p class="hero-sub">Two weeks. Evidence, not opinions. A scored, defensible answer to the question your board is already asking.</p>
+  <div class="stat-row">
+    <div class="stat"><b>2</b><span>Weeks</span></div>
+    <div class="stat"><b>7</b><span>Dimensions</span></div>
+    <div class="stat"><b>6–10</b><span>Interviews</span></div>
+    <div class="stat"><b>12-mo</b><span>Roadmap</span></div>
+  </div>
+</div>
+
+<!-- PROBLEM -->
+<span class="section-tag">The problem this solves</span>
+<h2>Self-assessments rate intentions. Risk accumulates in operations.</h2>
+<p class="body-copy">Your organization has an <a href="airindex.html">AI Readiness Index score</a> — a self-reported snapshot. Useful, but self-assessments have a known failure mode: organizations rate themselves on intentions, while risk accumulates in operations. The Deep Assessment replaces self-report with <strong>evidence</strong>: interviews, document review, and observation across all seven dimensions — producing a score your leadership can defend to a board, a regulator, or themselves.</p>
+
+<!-- TWO WEEKS -->
+<span class="section-tag">What happens over the two weeks</span>
+<div class="phase">
+  <div class="phase-head"><span class="phase-wk">WK 1</span><span class="phase-name">Evidence</span></div>
+  <div class="phase-body">
+    <div class="phase-cell"><h4>Activity</h4><p>Structured interviews with 6–10 stakeholders across leadership, IT/security, operations, and frontline teams. Review of policies, data architecture documentation, vendor contracts, and current AI tool usage.</p></div>
+    <div class="phase-cell"><h4>You receive</h4><p><strong>Interim findings memo</strong> — including anything urgent enough that it shouldn't wait for the final report.</p></div>
+  </div>
+</div>
+<div class="phase">
+  <div class="phase-head"><span class="phase-wk">WK 2</span><span class="phase-name">Analysis &amp; Roadmap</span></div>
+  <div class="phase-body">
+    <div class="phase-cell"><h4>Activity</h4><p>Evidence-based rescore across all seven dimensions. Gap analysis against sector expectations. Prioritized 12-month roadmap with owners, sequence, and budget logic.</p></div>
+    <div class="phase-cell"><h4>You receive</h4><p><strong>Written report (15–25 pages)</strong>, evidence-based Readiness Index score, and a <strong>90-minute executive briefing session</strong>.</p></div>
+  </div>
+</div>
+
+<!-- DIMENSIONS -->
+<span class="section-tag">The seven dimensions assessed</span>
+<div class="dim-list">
+  <div class="dim-row"><div class="dim-name">Data Readiness</div><div class="dim-q">Whether your data can actually support what you intend to build</div></div>
+  <div class="dim-row"><div class="dim-name">Use-Case Clarity</div><div class="dim-q">Named processes with baselines, or ambition without targets</div></div>
+  <div class="dim-row"><div class="dim-name">Workforce Exposure &amp; Capability</div><div class="dim-q">Which roles change, and whether anyone is preparing them</div></div>
+  <div class="dim-row"><div class="dim-name">Security &amp; Risk Posture</div><div class="dim-q">What's leaving your building through public AI tools right now</div></div>
+  <div class="dim-row"><div class="dim-name">Governance &amp; Compliance</div><div class="dim-q">What you could show a regulator tomorrow</div></div>
+  <div class="dim-row"><div class="dim-name">Leadership Alignment</div><div class="dim-q">Whether your executives are funding one strategy or three</div></div>
+  <div class="dim-row"><div class="dim-name">Financial Discipline</div><div class="dim-q">Investment logic versus FOMO spending</div></div>
+</div>
+
+<!-- PRICING -->
+<span class="section-tag">Transparent pricing</span>
+<h2>Fixed fees. No discovery-call pricing games.</h2>
+<p class="body-copy">You should know what an engagement costs before the first conversation. Both fees are fixed — no hourly overruns, no scope surprises.</p>
+<div class="price-grid">
+  <div class="price-card feature">
+    <div class="price-scope">Organizations under 1,000 employees</div>
+    <div class="price-num">$9,500</div>
+    <div class="price-note">Fixed fee · full two-week engagement, all deliverables included</div>
+  </div>
+  <div class="price-card">
+    <div class="price-scope">Larger or multi-entity organizations</div>
+    <div class="price-num">$20,000</div>
+    <div class="price-note">Fixed fee · same engagement, scoped for additional entities and stakeholders</div>
+  </div>
+</div>
+<div class="price-credit"><b>Fee credited in full</b> against any subsequent advisory retainer within 90 days.</div>
+
+<div class="honesty">
+  <h3>The honest-finding commitment</h3>
+  <p>If the evidence shows your organization does not need outside help — that your gaps are closable internally with the roadmap provided — the report says exactly that. This engagement is not a sales funnel for a longer engagement. It is the diagnostic. What you do with it is your decision.</p>
+</div>
+
+<!-- WHO -->
+<span class="section-tag">Who conducts it</span>
+<div class="who">
+  <div class="who-badge">AM</div>
+  <p><b>Dr. Andrew Mangle — CISSP, CISA, PMP, CSSLP.</b> Eighteen years at the intersection of enterprise technology and workforce development: application development and supervision in the public sector, security and blockchain consulting across public and private entities, and faculty in Management Information Systems. Creator of the AI Readiness Index and the Mangle Metric readiness instruments. The rare assessor equally fluent in what the technology does and what it does to your people.</p>
+</div>
+
+<!-- CONTACT FORM -->
+<span class="section-tag" id="contact">Start the conversation</span>
+<h2>Request a Deep Assessment</h2>
+<p class="body-copy">Tell us about your organization and we'll be in contact within one business day. Prefer to test the water first? <a href="airindex.html">Take the free AI Readiness Index</a> — it takes 15 minutes.</p>
+
+<div id="form-area">
+  <div class="field"><label>Name <span class="req">*</span></label><input id="f-name" type="text" autocomplete="name"></div>
+  <div class="field"><label>Work email <span class="req">*</span></label><input id="f-email" type="email" autocomplete="email"></div>
+  <div class="field"><label>Organization <span class="req">*</span></label><input id="f-org" type="text" autocomplete="organization"></div>
+  <div class="field"><label>Organization size <span class="req">*</span></label>
+    <select id="f-size">
+      <option value="">Select…</option>
+      <option>Under 50 employees</option>
+      <option>50–250 employees</option>
+      <option>250–1,000 employees</option>
+      <option>1,000–5,000 employees</option>
+      <option>Over 5,000 employees</option>
+    </select>
+  </div>
+  <div class="field"><label>What's driving the timing? (optional)</label><textarea id="f-msg" placeholder="Board question, regulator inquiry, budget season, security concern, vendor pitch you're unsure about…"></textarea></div>
+  <button class="btn-next" id="submit-btn" onclick="submitForm()">Request the assessment →</button>
+  <div class="err" id="err"></div>
+</div>
+
+<!-- THANK YOU (shown after submit) -->
+<div class="thanks" id="thanks">
+  <h2>Thank you — <em>we're on it.</em></h2>
+  <p>Your request has been received. Someone from Best Entrust will be in contact within <b>one business day</b> to schedule an initial conversation and confirm scope.</p>
+  <p>In the meantime, if you haven't already scored your organization, the free instrument gives us both a head start.</p>
+  <a href="airindex.html" class="btn-next" style="text-decoration:none;">Take the AI Readiness Index →</a>
+</div>
+
+<!-- HIDDEN FORM -->
+<form id="fs" action="https://formspree.io/f/mykqvprl" method="POST" style="display:none;">
+  <input type="hidden" name="_subject" id="fs-subject">
+  <input type="hidden" name="engagement" value="AI Readiness Deep Assessment">
+  <input type="hidden" name="name" id="fs-name">
+  <input type="hidden" name="email" id="fs-email">
+  <input type="hidden" name="organization" id="fs-org">
+  <input type="hidden" name="org_size" id="fs-size">
+  <input type="hidden" name="message" id="fs-msg">
+  <input type="hidden" name="submitted_at" id="fs-time">
+</form>
+
+<footer>The AI Readiness Deep Assessment · A Best Entrust, LLC product · Maryland · Two-week delivery · Limited concurrent engagements<br>
+<a href="https://bestentrust.com">bestentrust.com</a> · <a href="airindex.html">Free AI Readiness Index</a> · hello@andrewmangle.com</footer>
+</main>
+
+<script>
+function submitForm(){
+  const name=document.getElementById('f-name').value.trim();
+  const email=document.getElementById('f-email').value.trim();
+  const org=document.getElementById('f-org').value.trim();
+  const size=document.getElementById('f-size').value;
+  const err=document.getElementById('err');
+  if(!name||!email||!org||!size){
+    err.style.display='block';err.textContent='Please complete all required fields so we can scope the engagement correctly.';
+    return;
+  }
+  err.style.display='none';
+  document.getElementById('fs-subject').value=`Deep Assessment request — ${org} (${size})`;
+  document.getElementById('fs-name').value=name;
+  document.getElementById('fs-email').value=email;
+  document.getElementById('fs-org').value=org;
+  document.getElementById('fs-size').value=size;
+  document.getElementById('fs-msg').value=document.getElementById('f-msg').value.trim();
+  document.getElementById('fs-time').value=new Date().toISOString();
+  const btn=document.getElementById('submit-btn');
+  btn.disabled=true;btn.textContent='Sending…';
+  const form=document.getElementById('fs');
+  fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}})
+    .then(r=>{
+      if(r.ok){
+        document.getElementById('form-area').style.display='none';
+        document.getElementById('thanks').style.display='block';
+        window.scrollTo({top:document.getElementById('thanks').offsetTop-80,behavior:'smooth'});
+      }else{throw new Error('send failed');}
+    })
+    .catch(()=>{btn.disabled=false;btn.textContent='Request the assessment →';
+      err.style.display='block';err.textContent='Something went wrong sending your request. Please try again, or email hello@andrewmangle.com directly.';});
+}
+</script>
+</body>
+</html>
